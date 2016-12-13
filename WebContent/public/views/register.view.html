@@ -1,0 +1,26 @@
+<header ng-include="'public/views/partials/navigation.view.html'"></header>
+
+<h2>Register</h2>
+
+<form name="registerForm" novalidate>
+  <input type="text" name="username" placeholder="Username" ng-model="user.username"
+    ng-minlength="4" ng-maxlength="12" required/>
+  <input type="email" name="email" placeholder="Email Address" ng-model="user.email" required/>
+  <input type="password" name="password" placeholder="Password" ng-model="user.password"
+    ng-minlength="6" required/>
+  <input type="submit" ng-disabled="registerForm.$invalid" ng-click="register(user)"/>
+</form>
+
+<div id="regErrors">
+  <ul>
+    <li ng-show="registerForm.username.$invalid">
+      Username must be between 4 / 12 characters long.
+    </li>
+    <li ng-show="registerForm.email.$invalid">
+      Email must be valid.
+    </li>
+    <li ng-show="registerForm.password.$invalid">
+      Password must be at least 6 characters.
+    </li>
+  </ul>
+</div>

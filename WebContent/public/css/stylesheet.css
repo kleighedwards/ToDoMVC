@@ -1,0 +1,148 @@
+body {
+  font-family: sans-serif;
+}
+
+table {
+  /*background: rgba(0, 0, 0, 0.5);
+  color: #fff;*/
+  font-size: 16px;
+  padding-top: 3%;
+  width: 100%;
+}
+
+tbody tr:nth-child(odd) {
+   background-color: #ccc;
+}
+
+th, td {
+  /*border-bottom: 1px solid #ddd;*/
+  padding: 13px;
+  text-align: center;
+}
+
+input.ng-dirty.ng-invalid {
+  background-color: #f7b8da;
+}
+
+input.ng-dirty.ng-valid {
+  background-color: #aaf792;
+}
+
+input[type=submit] {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 43%;
+  margin-right: 45%;
+  margin-bottom: 5%;
+}
+
+input[type=submit]:hover {
+  color: black;
+}
+
+input[type=text] {
+  width: 85%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-left: 8%;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 85%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-left: 8%;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  width: 85%;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-left: 8%;
+  box-sizing: border-box;
+}
+
+h3, h2{
+  text-align: left;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+span {
+  font-size: 20px;
+  padding-left: 5%;
+}
+
+button {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 10%;
+  font-size: 18px;
+}
+
+.yellow {
+  font-size: 34px;
+  background-color: #ffec88;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.green {
+  font-size: 34px;
+  background-color: #aaf792;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.clean {
+  text-decoration: none;
+  color: black;
+}

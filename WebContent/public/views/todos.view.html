@@ -1,0 +1,26 @@
+<header ng-include="'public/views/partials/navigation.view.html'"></header>
+
+<h2>ToDo App <span ng-class="styleTodo(todoLength(todos))">{{todoLength(todos)}}</span></h2>
+
+<input type="text" placeholder="Enter New ToDo" ng-model="task"/>
+<input type="submit" value="Add" ng-click="submit(task)"/>
+
+<table>
+  <thead>
+    <tr>
+      <th>ToDo</th>
+      <th>Mark</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="todo in todos | completeFilter:showComplete | orderBy: 'task'"
+    todo-row data="todo" remove="remove" update="update">
+    </tr>
+  </tbody>
+</table>
+
+<span>Show completed tasks: </span><input type="checkbox" ng-model="showComplete"/>
+
+<my-footer data="todos"></my-footer>
